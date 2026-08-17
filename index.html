@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Lost AirPods — Please Contact Me</title>
+<style>
+  :root {
+    --bg: #f5f4f2;
+    --card: #ffffff;
+    --ink: #1c1c1e;
+    --muted: #6b6b6f;
+    --accent: #2f6fed;
+    --accent-ink: #ffffff;
+    --border: #e6e4e1;
+  }
+  * { box-sizing: border-box; }
+  body {
+    margin: 0;
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+    background: var(--bg);
+    color: var(--ink);
+    display: flex;
+    justify-content: center;
+    padding: 32px 16px;
+    min-height: 100vh;
+  }
+  .card {
+    background: var(--card);
+    border: 1px solid var(--border);
+    border-radius: 20px;
+    max-width: 420px;
+    width: 100%;
+    padding: 32px 24px;
+    text-align: center;
+    box-shadow: 0 1px 3px rgba(0,0,0,0.04);
+  }
+  .icon {
+    font-size: 40px;
+    margin-bottom: 8px;
+  }
+  h1 {
+    font-size: 22px;
+    margin: 8px 0 4px;
+  }
+  .subtitle {
+    color: var(--muted);
+    font-size: 15px;
+    margin: 0 0 24px;
+    line-height: 1.5;
+  }
+  .message {
+    background: var(--bg);
+    border-radius: 14px;
+    padding: 16px;
+    font-size: 15px;
+    line-height: 1.5;
+    margin-bottom: 24px;
+    text-align: left;
+  }
+  .actions {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+  }
+  a.btn {
+    display: block;
+    text-decoration: none;
+    padding: 14px 16px;
+    border-radius: 12px;
+    font-size: 16px;
+    font-weight: 600;
+  }
+  .btn-primary {
+    background: var(--accent);
+    color: var(--accent-ink);
+  }
+  .btn-secondary {
+    background: var(--card);
+    color: var(--ink);
+    border: 1px solid var(--border);
+  }
+  .footer {
+    margin-top: 24px;
+    font-size: 12px;
+    color: var(--muted);
+  }
+</style>
+</head>
+<body>
+  <div class="card">
+    <div class="icon">🎧</div>
+    <h1>These AirPods are lost!</h1>
+    <p class="subtitle">Thanks for scanning, this belongs to someone who'd really like it back.</p>
+
+    <div class="message">
+      Hi! You found my AirPods. I'd really appreciate it if you could reach out so I can arrange to pick them up. Thank you so much.
+    </div>
+
+    <div class="message">
+      مرحبًا! لقد وجدت سماعات الخاصة بي. سأكون ممتنًا جدًا إذا تمكنت من التواصل معي حتى أتمكن من ترتيب استلامها. شكرًا جزيلاً لك..
+    </div>
+
+    <div class="actions">
+      <a class="btn btn-primary" href="tel:0792986388">Call me: 0792986388</a>
+      <a class="btn btn-secondary" href="sms:0792986388">Text me</a>
+      <a class="btn btn-secondary" href="mailto:your.email@example.com">Email me</a>
+      <a class="btn btn-secondary" href="https://wa.me/00962792986388" target="_blank">WhatsApp me</a>
+    </div>
+
+    <div class="footer">Thank you for being a good human 🙏</div>
+  </div>
+</body>
+</html>
